@@ -21,10 +21,11 @@ export default function Home() {
         "Stomp, knockdown, light texture, and smooth ceiling finishes.",
     },
     {
-      title: "Interior Painting",
-      description:
-        "Professional interior painting for walls, ceilings, trim, and remodeled spaces.",
-    },
+      {
+  title: "Interior Painting",
+  description:
+    "Professional interior painting for walls, ceilings, trim, remodels, and new construction throughout Bloomington-Normal and Central Illinois.",
+},
     {
       title: "Insulation & Small Framing",
       description:

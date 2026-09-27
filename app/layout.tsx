@@ -28,7 +28,48 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        name: "Top Notch Drywall",
+        url: "https://therealtopnotchdrywall.com",
+        telephone: "+1-309-531-6825",
+        description:
+          "Professional drywall hanging, finishing, repair, texturing, interior painting, insulation and framing serving Bloomington-Normal and Central Illinois.",
+        areaServed: [
+          {
+            "@type": "City",
+            name: "Bloomington, Illinois",
+          },
+          {
+            "@type": "City",
+            name: "Normal, Illinois",
+          },
+          {
+            "@type": "AdministrativeArea",
+            name: "Central Illinois",
+          },
+        ],
+        knowsAbout: [
+          "Drywall Hanging",
+          "Drywall Finishing",
+          "Drywall Repair",
+          "Drywall Texturing",
+          "Water Damage Drywall Repair",
+          "Interior Painting",
+          "Insulation",
+          "Framing",
+        ],
+      }),
+    }}
+  />
+
+  {children}
+</body>
     </html>
   );
 }
