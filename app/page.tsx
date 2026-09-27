@@ -1,275 +1,471 @@
-export default function ModernBusinessWebsite() {
+export default function Home() {
+  const services = [
+    {
+      title: "Drywall Hanging",
+      description:
+        "Professional drywall installation for remodels, new construction, basements, ceilings, and more.",
+    },
+    {
+      title: "Drywall Finishing",
+      description:
+        "Professional taping, coating, sanding, and finishing for clean walls and ceilings.",
+    },
+    {
+      title: "Drywall Repair",
+      description:
+        "Patches, ceiling repairs, water damage repairs, flood cuts, and texture matching.",
+    },
+    {
+      title: "Texturing",
+      description:
+        "Stomp, knockdown, light texture, and smooth ceiling finishes.",
+    },
+    {
+      title: "Interior Painting",
+      description:
+        "Professional interior painting for walls, ceilings, trim, and remodeled spaces.",
+    },
+    {
+      title: "Insulation & Small Framing",
+      description:
+        "Insulation and framing services to complete your drywall project from start to finish."
+    },
+  ];
+
+  const projects = [
+  {
+    image: "/images/painting1.jpg",
+    title: "Interior Painting",
+  },
+  {
+    image: "/images/install3.jpg",
+    title: "Drywall Installation",
+  },
+  {
+    image: "/images/painting2.jpg",
+    title: "Custom Striped Accent Wall",
+  },
+  {
+    image: "/images/work5.jpg",
+    title: "Ceiling Repair & Texture",
+  },
+  {
+    image: "/images/repair1.jpg",
+    title: "Drywall Repair",
+  },
+  {
+    image: "/images/work4.jpg",
+    title: "New Construction ",
+  },
+];
+
   return (
-    <div className="min-h-screen bg-black text-white font-sans">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-orange-500/20">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <img
-              src="/images/topnotchlogooo.jpg"
-              alt="Top Notch Drywall Logo"
-              className="w-14 h-14 rounded-xl object-cover"
-            />
-            <h1 className="text-2xl font-bold tracking-tight text-orange-500">Top Notch Drywall</h1>
+    <main className="min-h-screen bg-[#ff5a00] text-white">
+
+      {/* HEADER */}
+      <header className="sticky top-0 z-50 bg-[#03244d] shadow-xl">
+        <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+
+          <div
+  className="font-black italic text-2xl md:text-3xl text-[#ff5a00] tracking-tight"
+  style={{
+    WebkitTextStroke: "1.5px white",
+    paintOrder: "stroke fill",
+  }}
+>
+            TOP NOTCH DRYWALL
           </div>
-          <nav className="hidden md:flex gap-8 text-sm font-medium">
-            <a href="#home" className="hover:text-gray-300">Home</a>
-            <a href="#about" className="hover:text-gray-300">About</a>
-            <a href="#services" className="hover:text-gray-300">Services</a>
-            <a href="#contact" className="hover:text-gray-300">Contact</a>
+
+          <nav className="hidden md:flex gap-8 font-semibold">
+            <a href="#home" className="hover:text-[#ff5a00]">
+              Home
+            </a>
+
+            <a href="#services" className="hover:text-[#ff5a00]">
+              Services
+            </a>
+
+            <a href="#work" className="hover:text-[#ff5a00]">
+              Our Work
+            </a>
+
+            <a href="#about" className="hover:text-[#ff5a00]">
+              About
+            </a>
+
+            <a href="#contact" className="hover:text-[#ff5a00]">
+              Contact
+            </a>
           </nav>
-          <button className="bg-orange-500 text-white px-5 py-2 rounded-2xl hover:bg-orange-600 transition">
-            Get Started
-          </button>
+
+          <a
+            href="tel:3095316825"
+            className="bg-[#ff5a00] px-5 py-3 rounded-xl font-black hover:bg-orange-600 transition"
+          >
+            309-531-6825
+          </a>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section
-        id="home"
-        className="relative overflow-hidden bg-gradient-to-br from-black via-gray-900 to-orange-500"
-      >
-        <div className="max-w-7xl mx-auto px-6 py-28 grid md:grid-cols-2 gap-12 items-center">
+      {/* HERO */}
+      <section id="home" className="bg-[#ff5a00]">
+        <div className="max-w-7xl mx-auto px-6 py-12 md:py-20 grid lg:grid-cols-2 gap-12 items-center">
+
           <div>
-            <p className="uppercase tracking-[0.25em] text-sm text-orange-300 mb-4">
-              Professional Drywall & Finishing Services
-            </p>
-            <h2 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-              Top-Quality Drywall Work You Can Trust
-            </h2>
-            <p className="text-orange-300 text-xl font-semibold mb-4 tracking-wide">
-              We Are The Real Top Notch Drywall — Serving Central Illinois
-            </p>
-            <p className="text-2xl font-bold text-orange-400 mb-6 tracking-wide">
-              Quality Work. Top Notch Results.
-            </p>
-            <p className="text-lg text-gray-300 mb-8 max-w-xl">
-              Professional drywall installation, finishing, repairs, and remodeling services for residential and commercial properties.
-            </p>
-            <div className="flex gap-4 flex-wrap">
-              <button className="bg-orange-500 text-white px-6 py-3 rounded-2xl hover:bg-orange-600 transition">
-                Our Services
-              </button>
-              <button className="border border-gray-300 px-6 py-3 rounded-2xl hover:bg-white transition">
-                Contact Us
-              </button>
-            </div>
+            <img
+              src="/images/newlogo-orange.jpg"
+              alt="Top Notch Drywall"
+              className="w-full max-w-md mx-auto"
+            />
           </div>
 
-          <div className="bg-black/70 rounded-3xl shadow-2xl p-8 border border-orange-500/20 text-white">
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Drywall Installation</h3>
-                <p className="text-gray-300">
-                  Professional drywall hanging and installation completed with precision and attention to detail.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Taping & Finishing</h3>
-                <p className="text-gray-300">
-                  Expert taping, mudding, sanding, and finishing for smooth flawless walls and ceilings.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Drywall Repair</h3>
-                <p className="text-gray-300">
-                  Reliable drywall repair, painting, and water damage restoration for residential and commercial properties.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-24 bg-black text-white">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h3 className="text-4xl font-bold mb-6">About Top Notch Drywall</h3>
-            <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Top Notch Drywall is a family-owned company proudly serving Central Illinois with professional drywall repair, hanging, finishing, painting, water damage repair, and remodeling services. We focus on quality workmanship, reliability, and clean professional results for every project.
+            <p className="font-bold tracking-[0.25em] uppercase text-[#03244d] mb-4">
+              Professional Drywall & Painting Services
             </p>
-            <p className="text-gray-300 text-lg leading-relaxed">
-              Whether you need drywall installation for new construction, repairs after water damage, or complete remodeling services, our experienced team is committed to delivering top-quality results you can trust.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-2 gap-6">
-            <div className="bg-orange-500 rounded-3xl p-8 text-center shadow-xl border border-orange-300">
-              <h4 className="text-4xl font-bold mb-2">30+</h4>
-              <p className="text-gray-300">Years Combined Experience</p>
-            </div>
-            <div className="bg-orange-500 rounded-3xl p-8 text-center shadow-xl border border-orange-300">
-              <h4 className="text-4xl font-bold mb-2">250+</h4>
-              <p className="text-gray-300">Projects Completed</p>
-            </div>
-            <div className="bg-orange-500 rounded-3xl p-8 text-center shadow-xl border border-orange-300">
-              <h4 className="text-4xl font-bold mb-2">98%</h4>
-              <p className="text-gray-300">Client Satisfaction</p>
-            </div>
-            <div className="bg-orange-500 rounded-3xl p-8 text-center shadow-xl border border-orange-300">
-              <h4 className="text-4xl font-bold mb-2">100%</h4>
-              <p className="text-gray-300">Professional Workmanship</p>
-            </div>
-          </div>
-        </div>
-      </section>
+            <h1 className="text-5xl md:text-7xl font-black leading-[0.95] mb-6">
+              QUALITY WORK.
+              <span className="block text-[#03244d]">
+                TOP NOTCH RESULTS.
+              </span>
+            </h1>
 
-      {/* Services Section */}
-      <section id="services" className="py-24 bg-gray-950 text-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold mb-4">Our Services</h3>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Professional drywall services tailored for residential and commercial projects.
-            </p>
-          </div>
+            <p className="text-xl font-semibold mb-8 max-w-xl">
+  Professional drywall hanging, finishing, repair, texturing,
+  painting and more throughout Central Illinois and the
+  Bloomington–Normal area.
+</p>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Drywall Installation',
-                description: 'Professional drywall installation services for homes, remodels, and commercial projects.',
-              },
-              {
-                title: 'Taping & Finishing',
-                description: 'Clean taping, mudding, sanding, and finishing work with top-quality craftsmanship.',
-              },
-              {
-                title: 'Drywall Repair',
-                description: 'Drywall repair, patching, and water damage restoration done quickly and professionally.',
-              },
-              {
-                title: 'Interior & Exterior Painting',
-                description: 'Professional interior and exterior painting services that deliver clean finishes and long-lasting results.',
-              },
-            ].map((service, index) => (
-              <div
-                key={index}
-                className="bg-black rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-orange-500/20"
+            <div className="flex flex-wrap gap-4">
+
+              <a
+                href="tel:3095316825"
+                className="bg-[#03244d] px-7 py-4 rounded-xl font-black text-lg shadow-xl"
               >
-                <div className="w-14 h-14 rounded-2xl bg-orange-500 mb-6" />
-                <h4 className="text-2xl font-semibold mb-4">{service.title}</h4>
-                <p className="text-gray-300 leading-relaxed">{service.description}</p>
+                CALL 309-531-6825
+              </a>
+
+              <a
+                href="#contact"
+                className="bg-white text-[#03244d] px-7 py-4 rounded-xl font-black text-lg shadow-xl"
+              >
+                GET A FREE ESTIMATE
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="services" className="bg-[#03244d] py-20">
+        <div className="max-w-7xl mx-auto px-6">
+
+          <div className="text-center mb-14">
+            <p className="text-[#ff5a00] font-black tracking-widest uppercase">
+              What We Do
+            </p>
+
+            <h2 className="text-4xl md:text-5xl font-black mt-2">
+              OUR SERVICES
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="bg-white text-[#03244d] rounded-2xl p-7 shadow-xl border-b-8 border-[#ff5a00]"
+              >
+                <h3 className="text-2xl font-black mb-3">
+                  {service.title}
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed">
+                  {service.description}
+                </p>
               </div>
             ))}
+
           </div>
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section id="gallery" className="py-24 bg-black text-white">
+      {/* OUR WORK */}
+      <section id="work" className="bg-[#ff5a00] py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h3 className="text-4xl font-bold mb-4">Our Work</h3>
-            <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-              Check out some of our recent drywall, finishing, painting, and remodeling projects from across Central Illinois.
+
+          <div className="text-center mb-14">
+            <p className="text-[#03244d] font-black tracking-widest uppercase">
+              Recent Projects
             </p>
+
+            <h2 className="text-4xl md:text-5xl font-black">
+              OUR WORK
+            </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                image: '/images/work5.jpg',
-                title: 'Garage Ceiling Water Damage Repair',
-                description: 'Professional drywall finishing and texture work completed with clean detailed results.',
-              },
-              {
-                image: '/images/work2.jpg',
-                title: 'New Construction Drywall',
-                description: 'Complete drywall installation for a new residential construction project.',
-              },
-              {
-                image: '/images/work3.jpg',
-                title: 'Interior Drywall Finishing',
-                description: 'Smooth drywall finishing and preparation ready for final paint and trim.',
-              },
-              {
-                image: '/images/work4.jpg',
-                title: 'Vaulted Ceiling Project',
-                description: 'Detailed drywall work on vaulted ceilings and custom interior spaces.',
-              },
-              {
-                image: '/images/customwall.jpg',
-                title: 'Custom Drywall Work',
-                description: 'Professional drywall installation and finishing with high-quality craftsmanship.',
-              },
-            ].map((project, item) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+            {projects.map((project) => (
               <div
-                key={item}
-                className="bg-gray-950 border border-orange-500/20 rounded-3xl overflow-hidden shadow-xl hover:scale-[1.02] transition duration-300"
+                key={project.image}
+                className="bg-[#03244d] rounded-2xl overflow-hidden shadow-2xl"
               >
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-72 w-full object-cover"
+                  className="w-full h-72 object-cover"
                 />
-                <div className="p-6">
-                  <h4 className="text-2xl font-semibold mb-2">{project.title}</h4>
-                  <p className="text-gray-300">
-                    {project.description}
-                  </p>
+
+                <div className="p-5">
+                  <h3 className="text-xl font-black">
+                    {project.title}
+                  </h3>
                 </div>
               </div>
             ))}
+
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-24 bg-black text-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <h3 className="text-4xl font-bold mb-4">Contact Us</h3>
-            <p className="text-gray-300 text-lg">
-              Contact Top Notch Drywall today for a free estimate on your next drywall or remodeling project.
-            </p>
-          </div>
+      {/* ABOUT */}
+      {/* ABOUT */}
+<section id="about" className="bg-white text-[#03244d] py-20">
+  <div className="max-w-6xl mx-auto px-6">
 
-          <div className="bg-orange-500 rounded-3xl p-10 shadow-2xl border border-orange-400">
-            <form className="grid md:grid-cols-2 gap-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="p-4 rounded-2xl border border-orange-300 bg-black text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="p-4 rounded-2xl border border-orange-300 bg-black text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <input
-                type="text"
-                placeholder="Company"
-                className="p-4 rounded-2xl border border-orange-300 bg-black text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white md:col-span-2"
-              />
-              <textarea
-                placeholder="Tell us about your project"
-                rows="6"
-                className="p-4 rounded-2xl border border-orange-300 bg-black text-white placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white md:col-span-2"
-              />
-              <button className="bg-black text-white px-6 py-4 rounded-2xl hover:bg-gray-900 transition md:col-span-2 font-semibold">
-                Send Message
-              </button>
-            </form>
-          </div>
+    <div className="grid md:grid-cols-[320px_1fr] gap-12 items-center">
+
+      {/* ILLINOIS GRAPHIC */}
+      <div className="flex justify-center">
+        <img
+          src="/images/illinois.jpg"
+          alt="Serving Central Illinois"
+          className="w-full max-w-[280px]"
+        />
+      </div>
+
+      {/* ABOUT TEXT */}
+      <div className="text-center md:text-left">
+
+        <p className="text-[#ff5a00] font-black tracking-widest uppercase mb-3">
+          Serving Central Illinois
+        </p>
+
+        <h2 className="text-4xl md:text-5xl font-black mb-6">
+          TOP NOTCH DRYWALL
+        </h2>
+
+        <p className="text-lg md:text-xl leading-relaxed text-gray-700">
+          Top Notch Drywall proudly serves Bloomington-Normal and surrounding
+          Central Illinois communities. We specialize in drywall hanging,
+          finishing, repairs, texture work, interior painting, water damage
+          repairs, insulation, and framing. Whether it&apos;s a small repair,
+          remodel, or new construction project, we take pride in providing
+          quality workmanship, clean job sites, and professional results from
+          start to finish.
+        </p>
+
+      </div>
+    </div>
+
+    {/* QUALITY BOXES */}
+    <div className="grid md:grid-cols-3 gap-6 mt-14">
+
+      <div className="bg-[#03244d] text-white rounded-2xl p-7 text-center">
+        <div className="text-[#ff5a00] text-3xl font-black mb-2">
+          QUALITY
         </div>
-      </section>
+        <p>Professional workmanship from start to finish.</p>
+      </div>
 
-      {/* Footer */}
-      <footer className="bg-orange-500 text-white py-10">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-400">
-            © 2026 Top Notch Drywall. All rights reserved.
+      <div className="bg-[#03244d] text-white rounded-2xl p-7 text-center">
+        <div className="text-[#ff5a00] text-3xl font-black mb-2">
+          CLEAN
+        </div>
+        <p>We respect your home and keep the jobsite clean.</p>
+      </div>
+
+      <div className="bg-[#03244d] text-white rounded-2xl p-7 text-center">
+        <div className="text-[#ff5a00] text-3xl font-black mb-2">
+          RELIABLE
+        </div>
+        <p>Dependable service and professional communication.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+      {/* CONTACT */}
+{/* FREE ESTIMATE */}
+<section id="contact" className="bg-[#03244d] py-20">
+  <div className="max-w-4xl mx-auto px-6">
+
+    <div className="text-center mb-10">
+      <p className="text-[#ff5a00] font-black tracking-widest uppercase">
+        Tell Us About Your Project
+      </p>
+
+      <h2 className="text-4xl md:text-6xl font-black mt-3 mb-5">
+        GET A FREE ESTIMATE
+      </h2>
+
+      <p className="text-gray-200 text-lg">
+        Fill out the form below and Top Notch Drywall will get back to you
+        about your project.
+      </p>
+    </div>
+
+    <form
+      action="https://formsubmit.co/topnotchdrywall.biz@gmail.com"
+      method="POST"
+      encType="multipart/form-data"
+      className="bg-white text-[#03244d] rounded-3xl p-6 md:p-10 shadow-2xl grid md:grid-cols-2 gap-6"
+    >
+
+  <input
+  type="hidden"
+  name="_next"
+  value="http://localhost:3000/thank-you"
+/>
+
+<input
+  type="hidden"
+  name="_subject"
+  value="New Estimate Request - Top Notch Drywall"
+/>
+
+      <div>
+        <label className="font-bold block mb-2">Name *</label>
+        <input
+          type="text"
+          name="Name"
+          required
+          placeholder="Your name"
+          className="w-full border-2 border-gray-300 rounded-xl p-4"
+        />
+      </div>
+
+      <div>
+        <label className="font-bold block mb-2">Phone *</label>
+        <input
+          type="tel"
+          name="Phone"
+          required
+          placeholder="Your phone number"
+          className="w-full border-2 border-gray-300 rounded-xl p-4"
+        />
+      </div>
+
+      <div>
+        <label className="font-bold block mb-2">Email</label>
+        <input
+          type="email"
+          name="Email"
+          placeholder="Your email address"
+          className="w-full border-2 border-gray-300 rounded-xl p-4"
+        />
+      </div>
+
+      <div>
+        <label className="font-bold block mb-2">Project Address</label>
+        <input
+          type="text"
+          name="Project Address"
+          placeholder="City or project address"
+          className="w-full border-2 border-gray-300 rounded-xl p-4"
+        />
+      </div>
+
+      <div className="md:col-span-2">
+        <label className="font-bold block mb-2">Type of Work *</label>
+
+        <select
+          name="Type of Work"
+          required
+          className="w-full border-2 border-gray-300 rounded-xl p-4 bg-white"
+        >
+          <option value="">Select a service</option>
+          <option>Drywall Hanging</option>
+          <option>Drywall Finishing</option>
+          <option>Drywall Repair</option>
+          <option>Water Damage Repair</option>
+          <option>Texture / Texture Matching</option>
+          <option>Interior Painting</option>
+          <option>Insulation & Framing</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div className="md:col-span-2">
+        <label className="font-bold block mb-2">
+          Tell Us About Your Project *
+        </label>
+
+        <textarea
+          name="Project Details"
+          required
+          rows={6}
+          placeholder="Describe the work you need completed..."
+          className="w-full border-2 border-gray-300 rounded-xl p-4"
+        />
+      </div>
+
+      <div className="md:col-span-2">
+        <label className="font-bold block mb-2">
+          Upload Photos
+        </label>
+
+        <input
+          type="file"
+          name="attachment"
+          accept="image/*"
+          className="w-full border-2 border-gray-300 rounded-xl p-4"
+        />
+
+        <p className="text-sm text-gray-500 mt-2">
+          Add a photo of the area if available.
+        </p>
+      </div>
+
+      <button
+        type="submit"
+        className="md:col-span-2 bg-[#ff5a00] text-white py-5 rounded-xl text-xl font-black hover:bg-orange-600 transition"
+      >
+        SEND ESTIMATE REQUEST
+      </button>
+
+      <p className="md:col-span-2 text-center text-sm text-gray-500">
+        Prefer to call? 309-531-6825
+      </p>
+
+    </form>
+  </div>
+</section>
+
+      {/* FOOTER */}
+      <footer className="bg-[#03244d] border-t border-[#ff5a00]/40 py-8">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+
+          <p className="font-black text-xl">
+            TOP NOTCH DRYWALL
           </p>
-          <div className="flex gap-6 text-gray-400">
-            <a href="#home" className="hover:text-white">Home</a>
-            <a href="#about" className="hover:text-white">About</a>
-            <a href="#services" className="hover:text-white">Services</a>
-            <a href="#contact" className="hover:text-white">Contact</a>
-          </div>
+
+          <p className="text-[#ff5a00] font-bold mt-1">
+            QUALITY WORK • TOP NOTCH RESULTS
+          </p>
+
+          <p className="text-gray-400 text-sm mt-4">
+            © 2026 Top Notch Drywall. All Rights Reserved.
+          </p>
+
         </div>
       </footer>
-    </div>
-  )
+
+    </main>
+  );
 }
