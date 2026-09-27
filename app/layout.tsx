@@ -13,10 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Top Notch Drywall | Drywall Contractor in Central Illinois",
+  title: "Top Notch Drywall | Drywall & Interior Painting in Central Illinois",
   description:
-    "Professional drywall hanging, finishing, repairs, texturing, interior painting, insulation and framing serving Bloomington-Normal and Central Illinois. Request a free estimate today.",
+    "Professional drywall hanging, finishing, repairs, texturing and interior painting serving Bloomington-Normal, Pontiac, Mackinaw, Tremont and surrounding Central Illinois communities.",
 };
+ 
 
 export default function RootLayout({
   children,
@@ -40,19 +41,21 @@ export default function RootLayout({
         telephone: "+1-309-531-6825",
         description:
           "Professional drywall hanging, finishing, repair, texturing, interior painting, insulation and framing serving Bloomington-Normal and Central Illinois.",
-        areaServed: [
-          {
-            "@type": "City",
-            name: "Bloomington, Illinois",
-          },
-          {
-            "@type": "City",
-            name: "Normal, Illinois",
-          },
-          {
-            "@type": "AdministrativeArea",
-            name: "Central Illinois",
-          },
+      areaServed: [
+  { "@type": "City", name: "Bloomington, Illinois" },
+  { "@type": "City", name: "Normal, Illinois" },
+  { "@type": "City", name: "Pontiac, Illinois" },
+  { "@type": "City", name: "Mackinaw, Illinois" },
+  { "@type": "City", name: "Tremont, Illinois" },
+  { "@type": "City", name: "Heyworth, Illinois" },
+  { "@type": "City", name: "LeRoy, Illinois" },
+  { "@type": "City", name: "Downs, Illinois" },
+  { "@type": "City", name: "Hudson, Illinois" },
+  { "@type": "City", name: "Towanda, Illinois" },
+  { "@type": "City", name: "Lexington, Illinois" },
+  { "@type": "City", name: "Carlock, Illinois" },
+  { "@type": "AdministrativeArea", name: "Central Illinois" },
+],
         ],
         knowsAbout: [
           "Drywall Hanging",

@@ -232,7 +232,56 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* SERVICE AREAS */}
+<section className="bg-[#03244d] text-white py-20">
+  <div className="max-w-6xl mx-auto px-6 text-center">
 
+    <p className="text-[#ff5a00] font-black tracking-widest uppercase mb-3">
+      Proudly Serving Central Illinois
+    </p>
+
+    <h2 className="text-4xl md:text-5xl font-black mb-6">
+      DRYWALL & INTERIOR PAINTING SERVICE AREAS
+    </h2>
+
+    <p className="text-lg md:text-xl text-gray-200 max-w-4xl mx-auto mb-10 leading-relaxed">
+      Top Notch Drywall provides professional drywall hanging, finishing,
+      repairs, texturing, water damage repairs, and interior painting
+      throughout Bloomington, Normal, Pontiac, Mackinaw, Tremont, and
+      surrounding Central Illinois communities.
+    </p>
+
+    <div className="flex flex-wrap justify-center gap-3">
+      {[
+        "Bloomington",
+        "Normal",
+        "Pontiac",
+        "Mackinaw",
+        "Tremont",
+        "Heyworth",
+        "LeRoy",
+        "Downs",
+        "Hudson",
+        "Towanda",
+        "Lexington",
+        "Carlock",
+      ].map((city) => (
+        <div
+          key={city}
+          className="bg-white text-[#03244d] px-6 py-3 rounded-xl font-black border-b-4 border-[#ff5a00]"
+        >
+          {city}, IL
+        </div>
+      ))}
+    </div>
+
+    <p className="mt-8 text-gray-300">
+      Don&apos;t see your town? Contact us about drywall and painting services
+      throughout the surrounding Central Illinois area.
+    </p>
+
+  </div>
+</section>
       {/* ABOUT */}
       {/* ABOUT */}
 <section id="about" className="bg-white text-[#03244d] py-20">
