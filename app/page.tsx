@@ -358,43 +358,61 @@ export default function Home() {
 
 {/* MEET THE OWNER */}
 <section className="bg-[#03244d] text-white py-20">
-  <div className="max-w-4xl mx-auto px-6 text-center">
+  <div className="max-w-6xl mx-auto px-6">
 
-    <p className="text-[#ff5a00] font-black tracking-widest uppercase mb-3">
-      Meet The Owner
-    </p>
+    <div className="grid md:grid-cols-2 gap-12 items-center">
 
-    <h2 className="text-4xl md:text-5xl font-black mb-3">
-      AARON KITCHENS
-    </h2>
+      {/* OWNER PHOTO */}
+      <div>
+        <img
+          src="/images/aaron-kitchens.jpg"
+          alt="Aaron Kitchens, owner of Top Notch Drywall"
+          className="w-full max-w-md mx-auto rounded-2xl shadow-2xl object-cover"
+        />
+      </div>
 
-    <p className="text-[#ff5a00] text-xl font-bold mb-8">
-      Owner of Top Notch Drywall
-    </p>
+      {/* OWNER INFO */}
+      <div className="text-center md:text-left">
 
-    <div className="text-lg md:text-xl text-gray-200 leading-relaxed space-y-6">
-      <p>
-        Drywall is more than just a trade to me — it&apos;s a family
-        tradition. I&apos;ve grown up around the trade, and I take a lot of
-        pride in the quality of work I put my name on.
-      </p>
+        <p className="text-[#ff5a00] font-black tracking-widest uppercase mb-3">
+          Meet The Owner
+        </p>
 
-      <p>
-        When you hire <strong className="text-white">Top Notch Drywall</strong>,
-        you&apos;re hiring me. I personally work on every project, so you know
-        who is coming into your home and who is responsible for getting the
-        job done right. I believe in quality workmanship, attention to detail,
-        and treating every customer&apos;s home with respect.
-      </p>
+        <h2 className="text-4xl md:text-5xl font-black mb-3">
+          AARON KITCHENS
+        </h2>
 
-      <p>
-        From small repairs and remodels to water-damage restoration and new
-        construction, my goal is simple: provide{" "}
-        <strong className="text-white">
-          quality work and Top Notch results
-        </strong>{" "}
-        on every job.
-      </p>
+        <p className="text-[#ff5a00] text-xl font-bold mb-8">
+          Owner of Top Notch Drywall
+        </p>
+
+        <div className="text-lg text-gray-200 leading-relaxed space-y-6">
+          <p>
+            Drywall is more than just a trade to me — it&apos;s a family
+            tradition. I&apos;ve grown up around the trade, and I take a lot of
+            pride in the quality of work I put my name on.
+          </p>
+
+          <p>
+            When you hire <strong className="text-white">Top Notch Drywall</strong>,
+            you&apos;re hiring me. I personally work on every project, so you
+            know who is coming into your home and who is responsible for getting
+            the job done right. I believe in quality workmanship, attention to
+            detail, and treating every customer&apos;s home with respect.
+          </p>
+
+          <p>
+            From small repairs and remodels to water-damage restoration and new
+            construction, my goal is simple: provide{" "}
+            <strong className="text-white">
+              quality work and Top Notch results
+            </strong>{" "}
+            on every job.
+          </p>
+        </div>
+
+      </div>
+
     </div>
 
   </div>
