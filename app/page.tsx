@@ -330,7 +330,7 @@ export default function Home() {
   <input
   type="hidden"
   name="_next"
-  value="http://localhost:3000/thank-you"
+  value="https://therealtopnotchdrywall.com/thank-you"
 />
 
 <input
