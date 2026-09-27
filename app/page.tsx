@@ -20,7 +20,7 @@ export default function Home() {
       description:
         "Stomp, knockdown, light texture, and smooth ceiling finishes.",
     },
-    {
+    
       {
   title: "Interior Painting",
   description:

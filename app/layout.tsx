@@ -56,7 +56,7 @@ export default function RootLayout({
   { "@type": "City", name: "Carlock, Illinois" },
   { "@type": "AdministrativeArea", name: "Central Illinois" },
 ],
-        ],
+        
         knowsAbout: [
           "Drywall Hanging",
           "Drywall Finishing",
