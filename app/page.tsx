@@ -194,6 +194,17 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MATERIALS WE USE */}
+<section className="bg-white py-20">
+  <div className="max-w-6xl mx-auto px-6 text-center">
+    <img
+      src="/images/materials-we-use.jpg"
+      alt="Professional materials and tools used by Top Notch Drywall"
+      className="w-full rounded-2xl shadow-xl"
+    />
+  </div>
+</section>
+
       {/* OUR WORK */}
       <section id="work" className="bg-[#ff5a00] py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -247,8 +258,7 @@ export default function Home() {
     <p className="text-lg md:text-xl text-gray-200 max-w-4xl mx-auto mb-10 leading-relaxed">
       Top Notch Drywall provides professional drywall hanging, finishing,
       repairs, texturing, water damage repairs, and interior painting
-      throughout Bloomington, Normal, Pontiac, Mackinaw, Tremont, and
-      surrounding Central Illinois communities.
+      throughout Bloomington, Normal and surrounding Central Illinois communities.
     </p>
 
     <div className="flex flex-wrap justify-center gap-3">
@@ -309,15 +319,11 @@ export default function Home() {
           TOP NOTCH DRYWALL
         </h2>
 
-        <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-          Top Notch Drywall proudly serves Bloomington-Normal and surrounding
-          Central Illinois communities. We specialize in drywall hanging,
-          finishing, repairs, texture work, interior painting, water damage
-          repairs, insulation, and framing. Whether it&apos;s a small repair,
-          remodel, or new construction project, we take pride in providing
-          quality workmanship, clean job sites, and professional results from
-          start to finish.
-        </p>
+      <p className="mt-8 text-gray-300">
+  Top Notch Drywall has proudly served Bloomington-Normal and surrounding
+  Central Illinois communities since 2018, providing dependable drywall
+  and interior painting services with quality workmanship from start to finish.
+</p>
 
       </div>
     </div>
@@ -349,6 +355,134 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+{/* MEET THE OWNER */}
+<section className="bg-[#03244d] text-white py-20">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+
+    <p className="text-[#ff5a00] font-black tracking-widest uppercase mb-3">
+      Meet The Owner
+    </p>
+
+    <h2 className="text-4xl md:text-5xl font-black mb-3">
+      AARON KITCHENS
+    </h2>
+
+    <p className="text-[#ff5a00] text-xl font-bold mb-8">
+      Owner of Top Notch Drywall
+    </p>
+
+    <div className="text-lg md:text-xl text-gray-200 leading-relaxed space-y-6">
+      <p>
+        Drywall is more than just a trade to me — it&apos;s a family
+        tradition. I&apos;ve grown up around the trade, and I take a lot of
+        pride in the quality of work I put my name on.
+      </p>
+
+      <p>
+        When you hire <strong className="text-white">Top Notch Drywall</strong>,
+        you&apos;re hiring me. I personally work on every project, so you know
+        who is coming into your home and who is responsible for getting the
+        job done right. I believe in quality workmanship, attention to detail,
+        and treating every customer&apos;s home with respect.
+      </p>
+
+      <p>
+        From small repairs and remodels to water-damage restoration and new
+        construction, my goal is simple: provide{" "}
+        <strong className="text-white">
+          quality work and Top Notch results
+        </strong>{" "}
+        on every job.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+{/* GOOGLE REVIEWS */}
+<section className="bg-white py-20">
+  <div className="max-w-6xl mx-auto px-6">
+
+    <div className="text-center mb-12">
+      <p className="text-[#ff5a00] font-black tracking-widest uppercase mb-3">
+        What Our Customers Say
+      </p>
+
+      <h2 className="text-4xl md:text-5xl font-black text-[#03244d] mb-4">
+        GOOGLE REVIEWS
+      </h2>
+
+      <div className="text-yellow-500 text-3xl mb-2">
+        ★★★★★
+      </div>
+
+      <p className="text-gray-600 text-lg font-bold">
+        4.6 Google Rating • 22 Reviews
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-6">
+
+      <div className="border border-gray-200 rounded-2xl p-7 shadow-lg">
+        <div className="text-yellow-500 text-xl mb-3">★★★★★</div>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          &quot;Hired Aaron to patch in drywall around a shower replacement
+          and some other bathroom remodeling. Quality work, timely
+          communication and job completion. Highly recommend!&quot;
+        </p>
+        <p className="font-black text-[#03244d]">Jason Landes</p>
+        <p className="text-sm text-gray-500">Google Review</p>
+      </div>
+
+      <div className="border border-gray-200 rounded-2xl p-7 shadow-lg">
+        <div className="text-yellow-500 text-xl mb-3">★★★★★</div>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          &quot;Aaron responded quickly and was able to take care of it right
+          away. He was kind and professional and very reasonably priced. I
+          would definitely recommend him and would use him again.&quot;
+        </p>
+        <p className="font-black text-[#03244d]">Judy Henninger</p>
+        <p className="text-sm text-gray-500">Google Review</p>
+      </div>
+
+      <div className="border border-gray-200 rounded-2xl p-7 shadow-lg">
+        <div className="text-yellow-500 text-xl mb-3">★★★★★</div>
+        <p className="text-gray-700 leading-relaxed mb-5">
+          &quot;Top Notch was the one most willing to work on my timeline,
+          had a competitive price, and did great work. Definitely will keep
+          them in my phone for next time.&quot;
+        </p>
+        <p className="font-black text-[#03244d]">Kyle Johnson</p>
+        <p className="text-sm text-gray-500">Google Review</p>
+      </div>
+
+    </div>
+
+    <div className="flex flex-wrap justify-center gap-4 mt-10">
+      <a
+        href="https://maps.google.com/maps?cid=3699437103711695236"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[#03244d] text-white px-7 py-4 rounded-xl font-black hover:bg-[#ff5a00] transition"
+      >
+        READ MORE REVIEWS ON GOOGLE
+      </a>
+
+      <a
+        href="https://search.google.com/local/writereview?placeid=ChIJazEJ8fxwC4gRhLGiA3IKVzM"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[#ff5a00] text-white px-7 py-4 rounded-xl font-black hover:bg-[#03244d] transition"
+      >
+        LEAVE US A GOOGLE REVIEW
+      </a>
+    </div>
+
+  </div>
+</section>
+
 
       {/* CONTACT */}
 {/* FREE ESTIMATE */}
