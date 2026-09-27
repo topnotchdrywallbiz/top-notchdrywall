@@ -47,8 +47,8 @@ export default function Home() {
     title: "Custom Striped Accent Wall",
   },
   {
-    image: "/images/work5.jpg",
-    title: "Ceiling Repair & Texture",
+    image: "/images/addition1.jpg",
+    title: "Room Addition",
   },
   {
     image: "/images/repair1.jpg",
