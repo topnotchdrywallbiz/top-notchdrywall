@@ -339,7 +339,7 @@ export default function Home() {
           TOP NOTCH DRYWALL
         </h2>
 
-      <p className="mt-8 text-gray-300">
+      <p className="mt-8 text-gray-700">
   Top Notch Drywall provides professional drywall installation, drywall repair, drywall finishing, texture, and interior painting services throughout Bloomington-Normal and Central Illinois. Serving homeowners, contractors, remodels, new construction, basements, and water-damage repairs with quality workmanship from start to finish.
 </p>
 
