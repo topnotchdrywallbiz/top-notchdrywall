@@ -24,6 +24,7 @@ export default function Home() {
     
       {
   title: "Interior Painting",
+  href: "/interior-painting",
   description:
     "Professional interior painting for walls, ceilings, trim, remodels, and new construction throughout Bloomington-Normal and Central Illinois.",
 },
