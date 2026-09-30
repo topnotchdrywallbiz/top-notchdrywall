@@ -255,10 +255,8 @@ export default function Home() {
       DRYWALL & INTERIOR PAINTING SERVICE AREAS
     </h2>
 
-    <p className="text-lg md:text-xl text-gray-200 max-w-4xl mx-auto mb-10 leading-relaxed">
-      Top Notch Drywall provides professional drywall hanging, finishing,
-      repairs, texturing, water damage repairs, and interior painting
-      throughout Bloomington, Normal and surrounding Central Illinois communities.
+    <p className="text-gray-300 max-w-4xl mx-auto mb-10 leading-relaxed">
+      Top Notch Drywall provides professional drywall hanging, finishing, repairs, texturing, water damage repairs, and interior painting throughout Bloomington, Normal, Pontiac, Mackinaw, Tremont, and surrounding Central Illinois communities.
     </p>
 
     <div className="flex flex-wrap justify-center gap-3">
