@@ -590,6 +590,8 @@ export default function Home() {
           <option value="">Select a service</option>
           <option>Drywall Hanging</option>
           <option>Drywall Finishing</option>
+          <option>Drywall Hanging & Finishing</option>
+<option>New Construction</option>
           <option>Drywall Repair</option>
           <option>Water Damage Repair</option>
           <option>Texture / Texture Matching</option>
