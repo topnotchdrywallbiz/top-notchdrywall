@@ -18,7 +18,7 @@ export default function Home() {
     {
       title: "Texturing",
       description:
-        "Stomp, knockdown, light texture, and smooth ceiling finishes.",
+        "Knockdown, stomp, skip trowel, light texture, and smooth ceiling finishes.",
     },
     
       {
