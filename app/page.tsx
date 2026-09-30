@@ -12,6 +12,7 @@ export default function Home() {
     },
     {
       title: "Drywall Repair",
+      href: "/drywall-repair",
       description:
         "Patches, ceiling repairs, water damage repairs, flood cuts, and texture matching.",
     },
@@ -175,20 +176,40 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="bg-white text-[#03244d] rounded-2xl p-7 shadow-xl border-b-8 border-[#ff5a00]"
-              >
-                <h3 className="text-2xl font-black mb-3">
-                  {service.title}
-                </h3>
+           {services.map((service) =>
+  service.href ? (
+    <a
+      key={service.title}
+      href={service.href}
+      className="bg-white text-[#03244d] rounded-2xl p-7 shadow-xl border-b-8 border-[#ff5a00] hover:scale-[1.02] transition-transform cursor-pointer"
+    >
+      <h3 className="text-2xl font-black mb-3">
+        {service.title}
+      </h3>
 
-                <p className="text-gray-700 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            ))}
+      <p className="text-gray-700 leading-relaxed">
+        {service.description}
+      </p>
+
+      <p className="text-[#ff5a00] font-black mt-4">
+        LEARN MORE →
+      </p>
+    </a>
+  ) : (
+    <div
+      key={service.title}
+      className="bg-white text-[#03244d] rounded-2xl p-7 shadow-xl border-b-8 border-[#ff5a00]"
+    >
+      <h3 className="text-2xl font-black mb-3">
+        {service.title}
+      </h3>
+
+      <p className="text-gray-700 leading-relaxed">
+        {service.description}
+      </p>
+    </div>
+  )
+)}
 
           </div>
         </div>
