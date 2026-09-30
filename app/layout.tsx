@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Top Notch Drywall | Drywall & Painting Bloomington-Normal IL",
   description:
-    "Professional drywall hanging, finishing, repairs, texturing and interior painting serving Bloomington-Normal, Pontiac, Mackinaw, Tremont and surrounding Central Illinois communities.",
+  "Professional drywall hanging, finishing, repairs, texturing and interior painting in Bloomington-Normal and Central Illinois. Quality work, top notch results.",
 };
  
 
